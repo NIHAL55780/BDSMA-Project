@@ -1,0 +1,54 @@
+# Indicative academic mapping — not legal advice.
+# DPDP Act, 2023 section numbers should be checked against the official Gazette.
+
+items:
+  - id: consent
+    obligation: Lawful processing / consent
+    act_reference: s.4, s.6
+    control: Consent table user_id, purpose, granted_at, withdrawn_at; pipeline filters to consenting users
+    test: Users without consent never appear in any derived file
+  - id: notice
+    obligation: Notice of purpose and data items
+    act_reference: s.5
+    control: Notice text generated from run config (purposes, fields, retention)
+    test: Notice file exists for every run config
+  - id: purpose_limitation
+    obligation: Purpose limitation
+    act_reference: s.5, s.6
+    control: Every run carries a purpose tag; loader refuses data for a purpose without consent
+    test: Mismatched purpose fails loudly
+  - id: minimisation
+    obligation: Data minimisation
+    act_reference: s.6(1)
+    control: Keep only pseudonymous user ID, POI/coordinates, timestamp; drop all else
+    test: Schema check — no extra columns
+  - id: erasure
+    obligation: Withdrawal and erasure
+    act_reference: s.6(4), s.8(7), s.12
+    control: erase_user(user_id) removes the user from raw, processed and released data
+    test: After erasure, user absent from every artefact
+  - id: security
+    obligation: Reasonable security safeguards
+    act_reference: s.8(5)
+    control: Pseudonymisation; mechanisms M1–M7; no raw data in the cloud
+    test: Attack results meet policy.yaml thresholds
+  - id: breach
+    obligation: Breach intimation
+    act_reference: s.8(6)
+    control: Audit log of data access in the dashboard backend (experiments themselves are out of scope)
+    test: Log entries exist for every data-touching endpoint
+  - id: children
+    obligation: Children's data; no tracking or behavioural monitoring of children
+    act_reference: s.9 (incl. s.9(3))
+    control: Exclude any user flagged as a child
+    test: Filter exists and is tested on synthetic flags
+  - id: dpia
+    obligation: Significant data fiduciary — DPIA and audit
+    act_reference: s.10
+    control: Evaluation report (utility + attack results per mechanism) serves as DPIA input
+    test: Report generated per dataset
+  - id: research_exemption
+    obligation: Research / statistical exemption
+    act_reference: s.17(2)(b)
+    control: Public research datasets; no decisions about specific individuals
+    test: Stated in paper; no per-user outputs published

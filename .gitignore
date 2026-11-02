@@ -1,0 +1,42 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+
+# Secrets
+.env
+.env.local
+*.pem
+
+# Data (raw + processed stay local; never commit user check-ins)
+data/raw/**
+!data/raw/.gitkeep
+data/processed/
+experiments/data/
+*.parquet
+
+# Results artefacts (keep summary CSVs)
+results/**
+!results/.gitkeep
+!results/*.csv
+figures/**
+!figures/.gitkeep
+!figures/*.md
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

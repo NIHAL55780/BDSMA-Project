@@ -1,0 +1,73 @@
+inherit: base.yaml
+seeds: [0, 1, 2]
+datasets: [synthetic]
+# Full MVP grid (use with foursquare_nyc / gowalla once downloaded):
+# datasets: [foursquare_nyc, gowalla]
+tasks: [next_poi, hotspot]
+# A compact grid for the CPU demo. Full grid is in comments.
+grid:
+  next_poi:
+    - {mechanism: M0, param_name: none, param_value: 0}
+    - {mechanism: M1, param_name: cell_m, param_value: 500}
+    - {mechanism: M1, param_name: cell_m, param_value: 2000}
+    - {mechanism: M2, param_name: k, param_value: 5}
+    - {mechanism: M3, param_name: eps_per_km, param_value: 1}
+    - {mechanism: M3, param_name: eps_per_km, param_value: 5}
+    - {mechanism: M4, param_name: epsilon, param_value: 4}
+    - {mechanism: M5, param_name: none, param_value: 0}
+    - {mechanism: M6, param_name: z, param_value: 1.0}
+  hotspot:
+    - {mechanism: M0, param_name: none, param_value: 0}
+    - {mechanism: M1, param_name: cell_m, param_value: 500}
+    - {mechanism: M1, param_name: cell_m, param_value: 2000}
+    - {mechanism: M2, param_name: k, param_value: 5}
+    - {mechanism: M3, param_name: eps_per_km, param_value: 1}
+    - {mechanism: M3, param_name: eps_per_km, param_value: 5}
+    - {mechanism: M7, param_name: epsilon, param_value: 0.5}
+    - {mechanism: M7, param_name: epsilon, param_value: 2}
+# Full MVP (uncomment for the paper sweep):
+# grid:
+#   next_poi:
+#     - {mechanism: M0, param_name: none, param_value: 0}
+#     - {mechanism: M1, param_name: cell_m, param_value: 250}
+#     - {mechanism: M1, param_name: cell_m, param_value: 500}
+#     - {mechanism: M1, param_name: cell_m, param_value: 1000}
+#     - {mechanism: M1, param_name: cell_m, param_value: 2000}
+#     - {mechanism: M2, param_name: k, param_value: 2}
+#     - {mechanism: M2, param_name: k, param_value: 5}
+#     - {mechanism: M2, param_name: k, param_value: 10}
+#     - {mechanism: M2, param_name: k, param_value: 20}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 0.5}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 1}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 2}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 5}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 10}
+#     - {mechanism: M4, param_name: epsilon, param_value: 1}
+#     - {mechanism: M4, param_name: epsilon, param_value: 2}
+#     - {mechanism: M4, param_name: epsilon, param_value: 4}
+#     - {mechanism: M4, param_name: epsilon, param_value: 8}
+#     - {mechanism: M5, param_name: none, param_value: 0}
+#     - {mechanism: M6, param_name: z, param_value: 0.5}
+#     - {mechanism: M6, param_name: z, param_value: 1.0}
+#     - {mechanism: M6, param_name: z, param_value: 1.5}
+#     - {mechanism: M6, param_name: z, param_value: 2.0}
+#   hotspot:
+#     - {mechanism: M0, param_name: none, param_value: 0}
+#     - {mechanism: M1, param_name: cell_m, param_value: 250}
+#     - {mechanism: M1, param_name: cell_m, param_value: 500}
+#     - {mechanism: M1, param_name: cell_m, param_value: 1000}
+#     - {mechanism: M1, param_name: cell_m, param_value: 2000}
+#     - {mechanism: M2, param_name: k, param_value: 2}
+#     - {mechanism: M2, param_name: k, param_value: 5}
+#     - {mechanism: M2, param_name: k, param_value: 10}
+#     - {mechanism: M2, param_name: k, param_value: 20}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 0.5}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 1}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 2}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 5}
+#     - {mechanism: M3, param_name: eps_per_km, param_value: 10}
+#     - {mechanism: M7, param_name: epsilon, param_value: 0.1}
+#     - {mechanism: M7, param_name: epsilon, param_value: 0.5}
+#     - {mechanism: M7, param_name: epsilon, param_value: 1}
+#     - {mechanism: M7, param_name: epsilon, param_value: 2}
+#     - {mechanism: M7, param_name: epsilon, param_value: 5}

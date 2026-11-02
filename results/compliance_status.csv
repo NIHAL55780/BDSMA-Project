@@ -1,0 +1,161 @@
+item_id,obligation,act_reference,mechanism_id,dataset_id,status,evidence
+consent,Lawful processing / consent,"s.4, s.6",M0,synthetic,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M1,synthetic,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M2,synthetic,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M3,synthetic,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M4,synthetic,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M5,synthetic,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M6,synthetic,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M7,synthetic,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M0,synthetic,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M1,synthetic,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M2,synthetic,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M3,synthetic,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M4,synthetic,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M5,synthetic,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M6,synthetic,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M7,synthetic,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M0,synthetic,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M1,synthetic,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M2,synthetic,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M3,synthetic,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M4,synthetic,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M5,synthetic,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M6,synthetic,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M7,synthetic,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M0,synthetic,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M1,synthetic,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M2,synthetic,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M3,synthetic,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M4,synthetic,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M5,synthetic,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M6,synthetic,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M7,synthetic,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M0,synthetic,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M1,synthetic,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M2,synthetic,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M3,synthetic,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M4,synthetic,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M5,synthetic,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M6,synthetic,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M7,synthetic,pass,Pipeline control implemented and unit-tested
+security,Reasonable security safeguards,s.8(5),M0,synthetic,fail,No privacy mechanism; baseline only
+security,Reasonable security safeguards,s.8(5),M1,synthetic,fail,reid_top1_p4=0.833 (limit 0.05); mia_auc=1.000 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M2,synthetic,fail,reid_top1_p4=0.933 (limit 0.05); mia_auc=0.992 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M3,synthetic,fail,reid_top1_p4=0.783 (limit 0.05); mia_auc=1.000 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M4,synthetic,fail,mia_auc=0.601 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M5,synthetic,pass,mia_auc=0.403 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M6,synthetic,fail,mia_auc=0.603 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M7,synthetic,partial,Mechanism logged but attack metrics not applicable or missing
+breach,Breach intimation,s.8(6),M0,synthetic,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M1,synthetic,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M2,synthetic,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M3,synthetic,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M4,synthetic,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M5,synthetic,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M6,synthetic,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M7,synthetic,na,Dashboard audit log; not part of experiment runs
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M0,synthetic,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M1,synthetic,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M2,synthetic,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M3,synthetic,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M4,synthetic,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M5,synthetic,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M6,synthetic,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M7,synthetic,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M0,synthetic,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M1,synthetic,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M2,synthetic,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M3,synthetic,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M4,synthetic,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M5,synthetic,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M6,synthetic,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M7,synthetic,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M0,synthetic,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M1,synthetic,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M2,synthetic,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M3,synthetic,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M4,synthetic,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M5,synthetic,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M6,synthetic,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M7,synthetic,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M0,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M1,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M2,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M3,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M4,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M5,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M6,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+consent,Lawful processing / consent,"s.4, s.6",M7,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M0,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M1,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M2,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M3,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M4,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M5,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M6,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+notice,Notice of purpose and data items,s.5,M7,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M0,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M1,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M2,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M3,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M4,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M5,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M6,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+purpose_limitation,Purpose limitation,"s.5, s.6",M7,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M0,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M1,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M2,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M3,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M4,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M5,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M6,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+minimisation,Data minimisation,s.6(1),M7,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M0,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M1,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M2,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M3,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M4,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M5,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M6,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+erasure,Withdrawal and erasure,"s.6(4), s.8(7), s.12",M7,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+security,Reasonable security safeguards,s.8(5),M0,foursquare_nyc,fail,No privacy mechanism; baseline only
+security,Reasonable security safeguards,s.8(5),M1,foursquare_nyc,fail,reid_top1_p4=0.575 (limit 0.05); mia_auc=0.999 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M2,foursquare_nyc,fail,reid_top1_p4=0.825 (limit 0.05); mia_auc=0.999 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M3,foursquare_nyc,fail,reid_top1_p4=0.500 (limit 0.05); mia_auc=0.975 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M4,foursquare_nyc,pass,mia_auc=0.467 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M5,foursquare_nyc,pass,mia_auc=0.546 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M6,foursquare_nyc,fail,mia_auc=0.579 (limit 0.55)
+security,Reasonable security safeguards,s.8(5),M7,foursquare_nyc,partial,Mechanism logged but attack metrics not applicable or missing
+breach,Breach intimation,s.8(6),M0,foursquare_nyc,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M1,foursquare_nyc,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M2,foursquare_nyc,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M3,foursquare_nyc,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M4,foursquare_nyc,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M5,foursquare_nyc,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M6,foursquare_nyc,na,Dashboard audit log; not part of experiment runs
+breach,Breach intimation,s.8(6),M7,foursquare_nyc,na,Dashboard audit log; not part of experiment runs
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M0,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M1,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M2,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M3,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M4,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M5,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M6,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+children,Children's data; no tracking or behavioural monitoring of children,s.9 (incl. s.9(3)),M7,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M0,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M1,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M2,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M3,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M4,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M5,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M6,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+dpia,Significant data fiduciary — DPIA and audit,s.10,M7,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M0,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M1,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M2,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M3,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M4,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M5,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M6,foursquare_nyc,pass,Pipeline control implemented and unit-tested
+research_exemption,Research / statistical exemption,s.17(2)(b),M7,foursquare_nyc,pass,Pipeline control implemented and unit-tested

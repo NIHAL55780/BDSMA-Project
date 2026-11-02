@@ -1,0 +1,60 @@
+seed: 0
+purpose: location_analytics_research
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  results: results
+  figures: figures
+  demo: data/demo
+
+preprocess:
+  min_user_checkins: 10
+  min_poi_visits: 10
+  session_gap_hours: 24
+  member_frac: 0.7
+  train_frac: 0.8
+  val_frac: 0.1
+  test_frac: 0.1
+
+model:
+  poi_dim: 128
+  hour_dim: 16
+  hidden: 256
+  seq_len: 20
+  lr: 0.001
+  batch_size: 64
+  max_epochs: 15
+  patience: 4
+  windows_per_user_cap: 40
+  dp_epochs: 8
+  max_grad_norm: 1.0
+  delta_override: null
+
+hotspot:
+  cell_m: 500
+  top_pct: 0.05
+  user_cap: 5
+
+attacks:
+  reid_n_targets: 200
+  reid_d_m: 250
+  reid_dt_hours: 1
+  reid_p: [2, 4, 8]
+  mia_tpr_fpr: 0.01
+  mia_max_users: 400
+
+fl:
+  clients_per_round: 20
+  local_epochs: 1
+  rounds: 12
+  clip_norm: 1.0
+  lr: 0.01
+
+mechanisms:
+  M1_cell_m: [250, 500, 1000, 2000]
+  M2_k: [2, 5, 10, 20]
+  M3_eps_per_km: [0.5, 1, 2, 5, 10]
+  M4_eps: [1, 2, 4, 8]
+  M6_z: [0.5, 1.0, 1.5, 2.0]
+  M7_eps: [0.1, 0.5, 1, 2, 5]

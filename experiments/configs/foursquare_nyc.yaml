@@ -1,0 +1,38 @@
+dataset: foursquare_nyc
+inherit: base.yaml
+# Laptop/CPU profile (8 GB RAM). Restore base.yaml model sizes on Colab/GPU.
+model:
+  poi_dim: 32
+  hour_dim: 8
+  hidden: 64
+  seq_len: 10
+  lr: 0.001
+  batch_size: 32
+  max_epochs: 6
+  patience: 3
+  windows_per_user_cap: 12
+  dp_epochs: 4
+  max_grad_norm: 1.0
+attacks:
+  reid_n_targets: 40
+  reid_d_m: 250
+  reid_dt_hours: 1
+  reid_p: [2, 4, 8]
+  mia_tpr_fpr: 0.01
+  mia_max_users: 80
+fl:
+  clients_per_round: 8
+  local_epochs: 1
+  rounds: 5
+  clip_norm: 1.0
+  lr: 0.01
+bbox:
+  lat_min: 40.55
+  lat_max: 40.95
+  lon_min: -74.10
+  lon_max: -73.70
+download:
+  urls:
+    - http://www-public.imtbs-tsp.eu/~zhang_da/pub/dataset_tsmc2014.zip
+    - http://www-public.it-sudparis.eu/~zhang_da/pub/dataset_tsmc2014.zip
+    - https://huggingface.co/datasets/Davidham3/FourSquare_NYC_TKY/resolve/main/dataset_TSMC2014_NYC.txt

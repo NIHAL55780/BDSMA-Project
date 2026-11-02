@@ -1,0 +1,51 @@
+dataset: synthetic
+inherit: base.yaml
+bbox:
+  lat_min: 40.70
+  lat_max: 40.80
+  lon_min: -74.02
+  lon_max: -73.94
+synthetic:
+  n_users: 80
+  n_pois: 40
+  checkins_per_user: 24
+  n_children: 4
+bbox_span_m: 8000
+# Tiny model so `lpdp demo` finishes on CPU.
+model:
+  poi_dim: 32
+  hour_dim: 8
+  hidden: 32
+  seq_len: 8
+  lr: 0.01
+  batch_size: 32
+  max_epochs: 4
+  patience: 3
+  windows_per_user_cap: 16
+  dp_epochs: 3
+  max_grad_norm: 1.0
+hotspot:
+  cell_m: 400
+  top_pct: 0.15
+  user_cap: 3
+attacks:
+  reid_n_targets: 30
+  reid_d_m: 250
+  reid_dt_hours: 1
+  reid_p: [2, 4, 8]
+  mia_tpr_fpr: 0.01
+  mia_max_users: 60
+fl:
+  clients_per_round: 8
+  local_epochs: 1
+  rounds: 4
+  clip_norm: 1.0
+  lr: 0.05
+preprocess:
+  min_user_checkins: 8
+  min_poi_visits: 5
+  session_gap_hours: 24
+  member_frac: 0.7
+  train_frac: 0.8
+  val_frac: 0.1
+  test_frac: 0.1

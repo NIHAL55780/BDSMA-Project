@@ -1,0 +1,8 @@
+# Project policy thresholds — not legal standards.
+# Used by the DPDP checklist "reasonable security safeguards" row.
+acceptable:
+  reid_top1_p4: 0.05
+  mia_auc: 0.55
+purpose: location_analytics_research
+retention_days: 365
+notice_fields: [pseudonymous_user_id, poi_id, latitude, longitude, timestamp]

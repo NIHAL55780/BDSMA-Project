@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lpdp"
+version = "0.1.0"
+description = "Privacy-utility trade-off in social location analytics under India's DPDP Act"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "BDSMA Project" }]
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "pyarrow>=14.0",
+  "scipy>=1.11",
+  "scikit-learn>=1.3",
+  "pyproj>=3.6",
+  "matplotlib>=3.8",
+  "torch>=2.1",
+  "opacus>=1.4.1",
+  "typer>=0.12",
+  "pyyaml>=6.0",
+  "pydantic>=2.5",
+  "pydantic-settings>=2.1",
+  "requests>=2.31",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.8", "pre-commit>=4.0", "httpx>=0.27"]
+app = ["fastapi>=0.115", "uvicorn[standard]>=0.30", "python-dotenv>=1.0", "supabase>=2.6"]
+
+[project.scripts]
+lpdp = "lpdp.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["experiments"]
+include = ["lpdp*"]
+
+[tool.setuptools.package-data]
+lpdp = ["compliance/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["experiments/tests"]
+pythonpath = ["experiments", "."]
+addopts = "-q --strict-markers"
+filterwarnings = [
+  "ignore::DeprecationWarning",
+  "ignore::UserWarning",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["experiments", "backend"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501", "B008"]
